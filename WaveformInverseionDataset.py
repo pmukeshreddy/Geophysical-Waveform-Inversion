@@ -1,3 +1,4 @@
+# slice from all files and shuffles them.
 class WaveformInversionDataset(Dataset):
     def __init__(self, data_pairs, num_time_steps=5, mode='train',transform=None):
         super().__init__()
