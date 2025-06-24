@@ -11,6 +11,7 @@ class DoubleConv(nn.Module):
             nn.BatchNorm2d(out_channels),
             nn.GELU()
         )
+        self.relu = False
     def forward(self,x):
         return self.double_conv(x)
 
